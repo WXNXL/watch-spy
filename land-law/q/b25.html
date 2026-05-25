@@ -19,20 +19,19 @@ body {
     overflow-y:auto;
 }
 
-/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+/* Алфавитная панель — компактная, НЕ sticky (уходит при прокрутке) */
 .alpha-bar {
-    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
-    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
-    position:sticky; top:0; background:#000000; z-index:10;
+    display:flex; flex-wrap:wrap; justify-content:center; gap:3px;
+    padding:8px 0; margin-bottom:12px; border-bottom:1px solid #333333;
 }
 .alpha-bar a {
     display:flex; align-items:center; justify-content:center;
-    width:46px; height:46px; color:#80cbc4; text-decoration:none;
-    font-size:18px; font-weight:bold; border-radius:50%;
+    width:34px; height:34px; color:#80cbc4; text-decoration:none;
+    font-size:14px; font-weight:bold; border-radius:50%;
     background:#111; border:1px solid #333333;
 }
 .alpha-bar a:active { background:#80cbc4; color:#000; }
-.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+.alpha-bar a.no-items { opacity:0.2; pointer-events:none; }
 
 /* Разделитель секций «По номерам» / «По алфавиту» */
 .section-label {
@@ -42,12 +41,11 @@ body {
     margin-top:20px; margin-bottom:10px;
 }
 
-/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+/* Буквенный якорь */
 .letter-anchor {
     padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
     font-weight:bold; text-align:center; border-bottom:1px solid #333333;
     margin:14px 0 10px 0;
-    scroll-margin-top:120px;
 }
 
 /* Ссылка-билет — крупная кликабельная область */
