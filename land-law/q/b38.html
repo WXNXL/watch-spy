@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 38</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
+    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
+    position:sticky; top:0; background:#000000; z-index:10;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:46px; height:46px; color:#80cbc4; text-decoration:none;
+    font-size:18px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#80cbc4; color:#000; }
+.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+
+/* Разделитель секций «По номерам» / «По алфавиту» */
+.section-label {
+    color:#80cbc4; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #80cbc4;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+    scroll-margin-top:120px;
+}
+
+/* Ссылка-билет — крупная кликабельная область */
+.ticket-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.ticket-link:active { background:#1a3a36; }
+.ticket-link .num { color:#80cbc4; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#80cbc4; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+
+.main-title { text-align:center; font-size:24px; color:#80cbc4; padding:12px 0 8px 0; }
+.ticket-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<h1>Билет 38. Понятие, цели, задачи земельного мониторинга</h1>
+<p><b>\|\| Государственный мониторинг</b> земель является <em>частью государственного экологического мониторинга</em> (государственного мониторинга окружающей среды) и представляет собой <b>систему наблюдений, оценки и прогнозирования</b>, направленных на <em>получение достоверной информации о состоянии земель,</em> об их количественных и качественных характеристиках, их использовании и о состоянии плодородия почв.</p>
+<p><b>\|\| Объектами</b> государственного мониторинга земель являются <b>все земли в РФ</b> (ст. 67 3К РФ).</p>
+<p><b>Задачами</b> государственного мониторинга земель являются:</p>
+<p>1\) своевременное выявление изменений состояния земель, оценка и прогнозирование этих изменений, выработка предложений о предотвращении негативного воздействия на земли, об устранении последствий такого воздействия;</p>
+<p>2\) обеспечение органов государственной власти информацией о состоянии окружающей среды в части состояния земель в целях реализации полномочий данных органов в области земельных отношений, включая реализацию полномочий по государственному земельному надзору;</p>
+<p>3\) обеспечение органов местного самоуправления информацией о состоянии окружающей среды в части состояния земель в целях реализации полномочий данных органов в области земельных отношений, в том числе по муниципальному земельному контролю;</p>
+<p>4\) обеспечение юридических лиц, индивидуальных предпринимателей, граждан информацией о состоянии окружающей среды в части состояния земель.</p>
+<p>Государственный мониторинг земель <b>осуществляют:</b></p>
+<p><b><em>1. Росреестр</b></em>. Приказ Росреестра от 22.07.2021 N П/0315 \"Об утверждении Порядка осуществления государственного мониторинга земель, за исключением земель сельскохозяйственного назначения\".</p>
+<p><b><em>2. Минсельхоз.</b></em> Приказ Минсельхоза России от 24.12.2015 N 664 \"Об утверждении Порядка осуществления государственного мониторинга земель сельскохозяйственного назначения\"</p>
+<p><b>Виды</b> государственного земельного мониторинга:</p>
+<p class="list-item"><b>1.</b> Мониторинг <b><em>состояния</b></em> земель.</p>
+<p class="list-item"><b>2.</b> Мониторинг <b><em>использования</b></em> земель.</p>
+<p><b>Функции государственного земельного мониторинга:</b></p>
+<p class="list-item"><b>1.</b> Экологическая.</p>
+<p class="list-item"><b>2.</b> Информационная. Вся информация, собранная в ходе гос.мониторинга земель <em>ложится в основу двух масштабных документов</em>:</p>
+<p class="list-item"><b>1.</b> Национальный доклад о состоянии и использовании земель сельхозназначения, готовит Минсельхоз</p>
+<p class="list-item"><b>2.</b> Национальный доклад о состоянии и использовании земель, кроме земель сельскохозяйственного назначения, готовит Росреестр</p>
+<p>Такие доклады готовятся ежегодно и размещаются на сайте указанных органов, утверждаются Правительством Российской Федерации. Такие доклады есть и по субъектам РФ, там можно посмотреть статистику по землям.</p>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 51</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
+    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
+    position:sticky; top:0; background:#000000; z-index:10;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:46px; height:46px; color:#80cbc4; text-decoration:none;
+    font-size:18px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#80cbc4; color:#000; }
+.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+
+/* Разделитель секций «По номерам» / «По алфавиту» */
+.section-label {
+    color:#80cbc4; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #80cbc4;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+    scroll-margin-top:120px;
+}
+
+/* Ссылка-билет — крупная кликабельная область */
+.ticket-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.ticket-link:active { background:#1a3a36; }
+.ticket-link .num { color:#80cbc4; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#80cbc4; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+
+.main-title { text-align:center; font-size:24px; color:#80cbc4; padding:12px 0 8px 0; }
+.ticket-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<h1>Билет 51. Административная и уголовная ответственность за земельные правонарушения</h1>
+<div class="table-simple">
+<p class="table-header"><b>ВИД ОТВЕТСТВЕННОСТИ,</b></p>
+<p class="table-header"><b>ПРАВОВАЯ ОСНОВА</b></p>
+<p class="table-header"><b>СУБЪЕКТ</b></p>
+<p class="table-header"><b>НАЛАГАЮЩИЙ ОРГАН</b></p>
+<p class="table-header"><b>САНКЦИИ</b></p>
+<p class="table-cell"><b>ОСНОВАНИЕ</b></p>
+<p class="table-cell"><b>Административная ответственность.</b></p>
+<p class="table-cell">КоАП РФ (гл. 7, 8, 10) и закон об административ-ных правонарушени-ях субъектов РФ (<em>Закон Саратовской области от 29 июля 2009 года N 104-ЗСО «Об административ-ных правонаруше-ниях на территории Саратовской области»</em>).</p>
+<p class="table-cell">Физические лица, достигшие 16 лет, должностные лица, юридические лица.</p>
+<p class="table-cell">Росреестр, Росприроднадзор, Россельхознадзор, суд.</p>
+<p class="table-cell">Административный щтраф (налагается надзорным органом) и приостановление деятельности (суд).</p>
+<p class="table-cell">Совершение административного правонарушения.</p>
+<p class="table-cell"><b>Уголовная ответственность.</b></p>
+<p class="table-cell">УК РФ.</p>
+<p class="table-cell">Физическое лицо, достигшее возраста 16 лет.</p>
+<p class="table-cell">Суд.</p>
+<p class="table-cell">Штраф, лишение права занимать определенные должности или заниматься определенной деятельностью, обязательные работы, исправительные работы, ограничение свободы, принудительные работы, лишение свободы.</p>
+<p class="table-cell">Совершение преступления, т.е. деяния, предусмотренного ст. 254 УК РФ – Порча земель.</p>
+<p class="table-cell">Отравление, загрязнение или иная порча земли вредными продуктами хозяйственной или иной деятельности вследствие нарушения правил обращения с удобрениями, стимуляторами роста растений, ядохимикатами и иными опасными химическими или биологическими веществами при их хранении, использовании и транспортировке, повлекшие причинение вреда здоровью человека или окружающей среде.</p>
+</div>
+<p>Различают несколько видов административных наказаний, которые могут применяться при совершении правонарушений в области охраны собственности на землю: предупреждение, административный штраф, конфискация или возмездное изъятие предмета, явившегося орудием совершения или объектом правонарушения, административное приостановление деятельности юридических лиц или индивидуальных предпринимателей.</p>
+<p>Привлечение лица, виновного в совершении земельных правонарушений, к административной ответственности в соответствии с п. 2 ст. 74 Земельного кодекса РФ не освобождает его от обязанности устранить допущенные земельные правонарушения и возместить причиненный нарушениями вред (гражданская ответственность).</p>
+<p>Одним из наиболее серьёзных нарушений земельного законодательства является порча земли. В связи с этим законодателем предусмотрен повышенный уровень защиты земли, а равно ответственности за порчу земли.</p>
+<p>Статьёй 254 Уголовного кодекса РФ за отравление, загрязнение или иную порчу земли вредными продуктами хозяйственной или иной деятельности вследствие нарушения правил обращения с удобрениями, стимуляторами роста растений, ядохимикатами и иными опасными химическими или биологическими веществами при их хранении, использовании и транспортировке, повлекшие причинение вреда здоровью человека или окружающей среде, а также иные последствия, установлена уголовная ответственность.</p>
+<p>За совершение данного преступления, в зависимости от степени опасности содеянного и иных обстоятельств, могут быть назначены следующие виды и размеры наказаний:</p>
+<p>\- штраф до 200 тысяч рублей или в размере заработной платы или иного дохода нарушителя за период до восемнадцати месяцев;</p>
+<p>\- лишение права занимать определенные должности или заниматься определенной деятельностью на срок до 3 лет;</p>
+<p>\- обязательные работы до 480 часов;</p>
+<p>\- исправительные работы до 2 лет;</p>
+<p>\- принудительные работы на срок до 5 лет;</p>
+<p>\- ограничение свободы до 2 лет;</p>
+<p>\- лишение свободы до 5 лет. ​​​</p>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>

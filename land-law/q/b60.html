@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 60</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
+    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
+    position:sticky; top:0; background:#000000; z-index:10;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:46px; height:46px; color:#80cbc4; text-decoration:none;
+    font-size:18px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#80cbc4; color:#000; }
+.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+
+/* Разделитель секций «По номерам» / «По алфавиту» */
+.section-label {
+    color:#80cbc4; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #80cbc4;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+    scroll-margin-top:120px;
+}
+
+/* Ссылка-билет — крупная кликабельная область */
+.ticket-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.ticket-link:active { background:#1a3a36; }
+.ticket-link .num { color:#80cbc4; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#80cbc4; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+
+.main-title { text-align:center; font-size:24px; color:#80cbc4; padding:12px 0 8px 0; }
+.ticket-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<h1>Билет 60. Правовой режим земель запаса</h1>
+<p>К землям запаса относятся земли, находящиеся в государственной или муниципальной собственности и не предоставленные гражданам или юридическим лицам, за исключением земель фонда перераспределения земель, формируемого в соответствии со статьей 80 Земельного кодекса.</p>
+<p>Земли запаса – земли, которые не предоставлены частным лицам для хозяйственного или иного использования и находятся в одной из форм публичной собственности на землю. В ходе процедуры разграничения госсобственности на землю к числу федеральных земель могут быть отнесены земли запаса, если на них располагается недвижимое имущество, находящееся в федеральной собственности. Аналогичный принцип действует и в отношении иных форм публичной собственности. Ввиду невозможности использования земельного участка из земель запаса для каких-либо целей отсутствует необходимость и правовая возможность определения вида разрешенного использования земельных участков с данной категорией.</p>
+<p>Для земель запаса не устанавливаются градостроительные регламенты (п. 6 ст. 36 ГрК РФ). Но это не значит, что в силу невозможности определения вида разрешенного использования земель запаса у них отсутствует определенный правовой режим.</p>
+<p>Отсутствие возможности определить ВИР – одна из особенностей правового режима земель запаса. Земли запаса – это категория земель, целевое назначение которой не определено. Категория «земли запаса» не включает подкатегорий.</p>
+<p>Использование земель запаса допускается после перевода их в другую категорию, за исключением случаев, если земли запаса включены в границы охотничьих угодий, случаев осуществления пользования недрами на таких землях и иных предусмотренных федеральными законами случаев.</p>
+<p>Перевод неразграниченных государственных земель запаса в другую категорию осуществляют органы власти субъектов РФ или местного самоуправления в установленных законами субъектов Российской Федерации случаях (ч. 2 ст. 15 Федерального закона от 21.12.2004 № 172-ФЗ). Перевод разграниченных федеральных, государственных или муниципальных земель запаса осуществляет собственник в лице соответствующего органа власти или местного самоуправления (п. 1 ст. 8 ЗК РФ).</p>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>

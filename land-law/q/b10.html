@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 10</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
+    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
+    position:sticky; top:0; background:#000000; z-index:10;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:46px; height:46px; color:#80cbc4; text-decoration:none;
+    font-size:18px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#80cbc4; color:#000; }
+.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+
+/* Разделитель секций «По номерам» / «По алфавиту» */
+.section-label {
+    color:#80cbc4; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #80cbc4;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+    scroll-margin-top:120px;
+}
+
+/* Ссылка-билет — крупная кликабельная область */
+.ticket-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.ticket-link:active { background:#1a3a36; }
+.ticket-link .num { color:#80cbc4; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#80cbc4; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+
+.main-title { text-align:center; font-size:24px; color:#80cbc4; padding:12px 0 8px 0; }
+.ticket-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<h1>Билет 10. Принципы земельного законодательства</h1>
+<p><b>\|\| Принципы земельного законодательства</b> - главные законодательные положения, на основе которых строится регулирование земельных отношений</p>
+<p>Принципами земельного законодательства можно считать положения Конституции РФ, также они систематизированы в ст.1 ЗК РФ.</p>
+<p class="list-item"><b>1.</b> Учет значения земли как основы жизнедеятельности народов, проживающих на территории РФ (регулирование отношений по использованию и охране земли осуществляется исходя из представлений о земле как о природном объекте, охраняемом в качестве важнейшей составной части природы, природном ресурсе, используемом в качестве средства производства в сельском хозяйстве и лесном хозяйстве и основы осуществления хозяйственной и иной деятельности на территории Российской Федерации, и одновременно как о недвижимом имуществе, об объекте права собственности и иных прав на землю);</p>
+<p class="list-item"><b>2.</b> Приоритет природоохранных норм перед имущественными при регулировании земельных отношений: использование земель возможно способами, которые не наносят ущерб окружающей среде;</p>
+<p class="list-item"><b>3.</b> Приоритет охраны жизни и здоровья человека, согласно которому при осуществлении деятельности по использованию и охране земель должны быть приняты такие решения и осуществлены такие виды деятельности, которые позволили бы обеспечить сохранение жизни человека или предотвратить негативное (вредное) воздействие на здоровье человека, даже если это потребует больших затрат;</p>
+<p class="list-item"><b>4.</b> Участие граждан, общественных организаций (объединений) и религиозных организаций в решении вопросов, касающихся их прав на землю;</p>
+<p class="list-item"><b>5.</b> Деление всех земель по целевому назначению на категории (использование земель возможно только по их целевому назначению). Сейчас закреплено 7 категорий земель;</p>
+<p class="list-item"><b>6.</b> Приоритет сохранения особо ценных земель и земель особо охраняемых территорий. Приоритет земель сельскохозяйственного назначения, земель особо охраняемых территорий и др. перед другими категориями: перевод данных земель в земли иных категорий законом или запрещен, или ограничен. Установление данного принципа не должно толковаться как отрицание или умаление значения земель других категорий;</p>
+<p class="list-item"><b>7.</b> Принцип платности использования земли;</p>
+<p class="list-item"><b>8.</b> Принцип единства судьбы земельного участка и недвижимости, расположенной на нем: нельзя продать дом без земли и наоборот;</p>
+<p class="list-item"><b>9.</b> Многообразие форм собственности на землю.</p>
+<p class="list-item"><b>10.</b> Разграничение государственной собственности на землю на собственность Российской Федерации, собственность субъектов Российской Федерации и собственность муниципальных образований, согласно которому правовые основы и порядок такого разграничения устанавливаются федеральными законами и т.д.</p>
+<p>При регулировании земельных отношений применяется принцип разграничения действия норм гражданского законодательства и норм земельного законодательства в части регулирования отношений по использованию земель, а также принцип государственного регулирования приватизации земли.</p>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 13</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
+    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
+    position:sticky; top:0; background:#000000; z-index:10;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:46px; height:46px; color:#80cbc4; text-decoration:none;
+    font-size:18px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#80cbc4; color:#000; }
+.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+
+/* Разделитель секций «По номерам» / «По алфавиту» */
+.section-label {
+    color:#80cbc4; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #80cbc4;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+    scroll-margin-top:120px;
+}
+
+/* Ссылка-билет — крупная кликабельная область */
+.ticket-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.ticket-link:active { background:#1a3a36; }
+.ticket-link .num { color:#80cbc4; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#80cbc4; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+
+.main-title { text-align:center; font-size:24px; color:#80cbc4; padding:12px 0 8px 0; }
+.ticket-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<h1>Билет 13. Объекты земельных отношений. Состав земель Российской Федерации</h1>
+<p><b>\|\| Объекты земельных правоотношений</b> - то, по поводу чего возникают земельные правоотношения.</p>
+<p><b>Они перечислены в ст. 6 ЗК:</b></p>
+<p class="list-item"><b>1.</b> Земля как природный объект и ресурс;</p>
+<p class="list-item"><b>2.</b> З/У;</p>
+<p class="list-item"><b>3.</b> Части З/У;</p>
+<p>Данный перечень объектов земельных отношений критикуется в науке, потому что не отражает реально существующий перечень.</p>
+<p><b>Земля как природный объект и ресурс</b> - НЕ ВИД земельных объектов, а свойство любого объекта земельных отношений. То есть все объекты земельных отношений являются природными объектами и ресурсами.</p>
+<p>Определение З/У также содержится в ст.6 ЗК:</p>
+<p><b>\|\| Земельный участок</b> - недвижимая вещь, которая представляет собой часть земной поверхности и имеет характеристики, позволяющие определить ее в качестве индивидуально определенной вещи (или: часть поверхности земли, недвижимое имущество, границы которого установлены в соответствии с ФЗ).</p>
+<p>Однако, данное определение признали <b>неконституционным</b> (потому что должна рассматриваться не только поверхность Земли, но и то, что под ней).</p>
+<p><b>З/У</b> - индивидуально-определенный объект, недвижимое имущество, который имеет собственные уникальные характеристики:</p>
+<ul>
+<li>местоположение или адрес</li>
+</ul>
+<ul>
+<li>площадь</li>
+</ul>
+<ul>
+<li>кадастровый номер</li>
+</ul>
+<ul>
+<li>др.</li>
+</ul>
+<p>З/у образуются при объединении, выделении или из земель, находящихся в гос/мун собственности.</p>
+<p>Законом могут предъявляться требования к размерам земельных участков. Например, минимальный и максимальный размеры З/У С/Х назначения устанавливаются законами субъектов РФ; размеры З/У в населенных пунктах устанавливаются градостроительными регламентами и др.</p>
+<p>Определения <b>части з/у</b> в ЗК нет. Однако, можно привести следующее понятие:</p>
+<p><b>\|\| Часть земельного участка</b> – определенная площадь соответствующего земельного участка, которая может быть отграничена на местности и превращена в самостоятельный объект земельных отношений и гражданского оборота, в котором может также участвовать земельная доля – условная часть права на один и тот же земельный участок, принадлежащий нескольким лицам, не отграниченная на местности, имеющая целевое назначение, усредненное количественное и качественное выражение в праве общей собственности.</p>
+<p><em>Часть земельного участка может быть двух видов:</em></p>
+<p class="list-item"><b>1.</b> <b>Часть з/у, выделенная в натуре - реальная доля</b>: такая часть з/у может быть только объектом некоторых земельных правоотношений (н-р, на части з/у может быть установлен сервитут). Часть з/у может попадать в охранную или другую зону (зоуиты). Провести отчуждение части з/у нельзя. Для этого нужно формирование нового з/у</p>
+<p class="list-item"><b>2.</b> <b>Земельная (идеальная) доля</b>: н-р, 1-2, ⅓, ¼ и др. Это не выделенная в натуре часть з/у; такую часть можно отчуждать, выделять в натуре (в самостоятельный з/у) по соглашению всех участников долевой собственности</p>
+<p><b><em>Состав земель РФ</em></b></p>
+<p>Все земли в РФ поделены на 7 категорий (перечень закрытый).</p>
+<p><em>Категория З/У - основополагающее понятие в ЗП.</em> В соответствии с ней определяется целевое назначение З/У:</p>
+<p class="list-item"><b>1.</b> Земли с/х назначения</p>
+<p class="list-item"><b>2.</b> Земли населенных пунктов</p>
+<p class="list-item"><b>3.</b> Земли промышленности, транспорта, связи и др</p>
+<p class="list-item"><b>4.</b> Земли особо охраняемых территорий и объектов</p>
+<p class="list-item"><b>5.</b> Земли лесного фонда</p>
+<p class="list-item"><b>6.</b> Земли водного фонда</p>
+<p class="list-item"><b>7.</b> Земли запаса</p>
+<p>В отношении некоторых категорий земель невозможно определить целевое назначение. Например, на землях населенных пунктов. Поэтому в отношении земель такой категории вводится понятие <em>«разрешенное использование з/у»</em>. То есть в рамках одной категории может быть множество видов разрешенного использования з/у.</p>
+<p>Виды разрешенного использования з/у устанавливаются в «Классификаторе видов разрешенного использования з/у, утвержденного приказом Росреестра».</p>
+<p>Чтобы изменить целевое назначение ЗУ необходимо перевести его из 1 категории в другую, но это <b>сложный</b> процесс, уст. ФЗ «О переводе земель из одно категории в другую» (для обычных граждан сложно очень обычно).</p>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>

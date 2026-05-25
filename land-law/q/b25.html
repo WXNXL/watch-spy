@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 25</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
+    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
+    position:sticky; top:0; background:#000000; z-index:10;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:46px; height:46px; color:#80cbc4; text-decoration:none;
+    font-size:18px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#80cbc4; color:#000; }
+.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+
+/* Разделитель секций «По номерам» / «По алфавиту» */
+.section-label {
+    color:#80cbc4; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #80cbc4;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+    scroll-margin-top:120px;
+}
+
+/* Ссылка-билет — крупная кликабельная область */
+.ticket-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.ticket-link:active { background:#1a3a36; }
+.ticket-link .num { color:#80cbc4; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#80cbc4; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+
+.main-title { text-align:center; font-size:24px; color:#80cbc4; padding:12px 0 8px 0; }
+.ticket-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<h1>Билет 25. Сделки с земельными участками. Общие правила об оборотоспособности земельных участков</h1>
+<p>Сделки с земельными участками совершаются в письменной форме. Сделки с недвижимостью подлежат регистрации в случаях, предусмотренных ГК (п. 1 ст. 164) Несоблюдение в случаях, установленных законом, требования о государственной регистрации сделки влечет ее недействительность. Такая сделка считается ничтожной (п. 1 ст. 165 ГК).</p>
+<p><b><em>Виды и общая характеристика правового регулирования сделок с земельными участками:</b></em></p>
+<p class="list-item"><b>1.</b> <b>Договор купли-продажи</b> земельного участка. По этому договору одна сторона (продавец) обязуется передать земельный участок в собственность другой стороны (покупателю), а покупатель обязуется принять его и уплатить за него определенную цену (ГК РФ)</p>
+<p class="list-item"><b>2.</b> <b>Договор</b> <b>дарения</b> земельного участка. Этот договор заключается только между гражданами. Нельзя считать дарением передачу земельного участка на безвозмездной основе от имени органа публичной власти. На договор дарения распространяются все ограничения предусмотренные ГК РФ (например, запрещено дарение от имени малолетних, недееспособных, между коммерческими организациями и т. д.)</p>
+<p class="list-item"><b>3.</b> <b>Договор</b> <b>залога</b> (ипотеки земельного участка). По этому договору одна сторона - залогодатель, являющийся кредитором по обязательству, обеспеченному ипотекой, имеет право получить удовлетворение своих денежных требований к должнику по этому обязательству из стоимости заложенного земельного участка другой стороны - залогодателя преимущественно перед другими кредиторами залогодателя, за изъятыми, установленными ФЗ. ФЗ «об ипотеке (залоге недвижимости)».</p>
+<p class="list-item"><b>4.</b> <b>Договор</b> <b>мены</b>. Земельный участок может меняться на другой земельный участок или на иную вещь не изъятую, не ограниченную в обороте. Это возмездный договор поэтому обязательно в договоре должна быть определена стоимость обмениваемых вещей (существенное условие). Договор мены может быть без доплаты если обмениваемые вещи признаются равноценными. Может быть с доплатой если вещи оценены по разному.</p>
+<p><b>5. Наследование</b>. Это односторонняя сделка. Правовое регулирование наследования земельных участков осуществляется частью 3 ГК РФ. В РФ наследство может открываться: по завещанию (имеет приоритет). Наследники по завещанию: РФ, субъекты РФ, МО, любые физ. и юр. лица; по закону: наследники физ. лица - родственники наследователя и МО (вымороченное имущество)</p>
+<p><b><em>Нотариальному удостоверению подлежат:</b></em></p>
+<ul>
+<li>Сделки по отчуждению доли в праве общей долевой собственности на земельный участок, за исключением отчуждения земельного участка всеми участниками долевой собственности по одной сделке, и отчуждения доли в праве на земельный участок сельскохозяйственного назначения, отнесенной к составу сельхоз. угодий;</li>
+</ul>
+<ul>
+<li>Сделки, связанные с распоряжением недвижимым имуществом на условиях опеки, а также сделки по отчуждению недвижимого имущества, принадлежащего несовершеннолетнему гражданину или гражданину, признанному ограниченно дееспособным подлежит нотариальному удостоверению;</li>
+</ul>
+<ul>
+<li>Договор дарения земельного участка, заключенный между гражданами.</li>
+</ul>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>

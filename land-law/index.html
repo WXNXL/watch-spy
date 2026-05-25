@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билеты по земельному праву</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
+    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
+    position:sticky; top:0; background:#000000; z-index:10;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:46px; height:46px; color:#80cbc4; text-decoration:none;
+    font-size:18px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#80cbc4; color:#000; }
+.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+
+/* Разделитель секций «По номерам» / «По алфавиту» */
+.section-label {
+    color:#80cbc4; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #80cbc4;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+    scroll-margin-top:120px;
+}
+
+/* Ссылка-билет — крупная кликабельная область */
+.ticket-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.ticket-link:active { background:#1a3a36; }
+.ticket-link .num { color:#80cbc4; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#80cbc4; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+
+.main-title { text-align:center; font-size:24px; color:#80cbc4; padding:12px 0 8px 0; }
+.ticket-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<div class="main-title">Билеты по земельному праву</div>
+<div class="ticket-count">Всего: 62</div>
+<nav class="alpha-bar"><a href="#letter-А">А</a><a href="#letter-Б">Б</a><a class="no-items">В</a><a href="#letter-Г">Г</a><a href="#letter-Д">Д</a><a class="no-items">Е</a><a class="no-items">Ж</a><a href="#letter-З">З</a><a href="#letter-И">И</a><a href="#letter-К">К</a><a class="no-items">Л</a><a href="#letter-М">М</a><a class="no-items">Н</a><a href="#letter-О">О</a><a href="#letter-П">П</a><a href="#letter-Р">Р</a><a href="#letter-С">С</a><a class="no-items">Т</a><a href="#letter-У">У</a><a href="#letter-Ф">Ф</a><a class="no-items">Х</a><a class="no-items">Ц</a><a class="no-items">Ч</a><a class="no-items">Ш</a><a class="no-items">Щ</a><a class="no-items">Э</a><a class="no-items">Ю</a><a class="no-items">Я</a></nav><div class="section-label">По номерам</div>
+<a href="q/b01.html" class="ticket-link"><span class="num">1.</span>История становления земельного права России</a>
+<a href="q/b02.html" class="ticket-link"><span class="num">2.</span>Земельная реформа конца ХХ века в России. Цели, задачи, и...</a>
+<a href="q/b03.html" class="ticket-link"><span class="num">3.</span>Понятие, предмет и метод земельного права</a>
+<a href="q/b04.html" class="ticket-link"><span class="num">4.</span>Система земельного права. Земельное право как наука и как...</a>
+<a href="q/b05.html" class="ticket-link"><span class="num">5.</span>Соотношение земельного права с другими отраслями права</a>
+<a href="q/b06.html" class="ticket-link"><span class="num">6.</span>Понятие и общая характеристика источников земельного прав...</a>
+<a href="q/b07.html" class="ticket-link"><span class="num">7.</span>Конституционные основы земельного права</a>
+<a href="q/b08.html" class="ticket-link"><span class="num">8.</span>Федеральные законы как источники земельного права</a>
+<a href="q/b09.html" class="ticket-link"><span class="num">9.</span>Законодательство субъектов Российской Федерации как источ...</a>
+<a href="q/b10.html" class="ticket-link"><span class="num">10.</span>Принципы земельного законодательства</a>
+<a href="q/b11.html" class="ticket-link"><span class="num">11.</span>Участники земельных отношений. Их правовой статус</a>
+<a href="q/b12.html" class="ticket-link"><span class="num">12.</span>Права и обязанности участников земельных отношений в обла...</a>
+<a href="q/b13.html" class="ticket-link"><span class="num">13.</span>Объекты земельных отношений. Состав земель Российской Фед...</a>
+<a href="q/b14.html" class="ticket-link"><span class="num">14.</span>Перевод земель и земельных участков из одной категории в ...</a>
+<a href="q/b15.html" class="ticket-link"><span class="num">15.</span>Понятие, содержание и виды земельных правоотношений</a>
+<a href="q/b16.html" class="ticket-link"><span class="num">16.</span>Понятие и формы собственности на землю в Российской Федер...</a>
+<a href="q/b17.html" class="ticket-link"><span class="num">17.</span>Право государственной и муниципальной собственности на зе...</a>
+<a href="q/b18.html" class="ticket-link"><span class="num">18.</span>Понятие и содержание права частной собственности на землю</a>
+<a href="q/b19.html" class="ticket-link"><span class="num">19.</span>Основания приобретения и прекращения прав на земельные уч...</a>
+<a href="q/b20.html" class="ticket-link"><span class="num">20.</span>Общая характеристика ограниченных прав на землю</a>
+<a href="q/b21.html" class="ticket-link"><span class="num">21.</span>Право постоянного (бессрочного) пользования, право пожизн...</a>
+<a href="q/b22.html" class="ticket-link"><span class="num">22.</span>Понятие и виды договора аренды земельных участков</a>
+<a href="q/b23.html" class="ticket-link"><span class="num">23.</span>Безвозмездное пользование земельным участком</a>
+<a href="q/b24.html" class="ticket-link"><span class="num">24.</span>Понятие и виды земельных сервитутов</a>
+<a href="q/b25.html" class="ticket-link"><span class="num">25.</span>Сделки с земельными участками. Общие правила об оборотосп...</a>
+<a href="q/b26.html" class="ticket-link"><span class="num">26.</span>Особенности совершения сделок с землей: купли-продажи, да...</a>
+<a href="q/b27.html" class="ticket-link"><span class="num">27.</span>Основания и порядок предоставления земельных участков, на...</a>
+<a href="q/b28.html" class="ticket-link"><span class="num">28.</span>Порядок проведения земельного аукциона</a>
+<a href="q/b29.html" class="ticket-link"><span class="num">29.</span>Порядок предоставления земельных участков, находящихся в ...</a>
+<a href="q/b30.html" class="ticket-link"><span class="num">30.</span>Защита прав на землю и земельные споры</a>
+<a href="q/b31.html" class="ticket-link"><span class="num">31.</span>Особенности судебной защиты прав на землю</a>
+<a href="q/b32.html" class="ticket-link"><span class="num">32.</span>Роль прокуратуры в защите прав на землю</a>
+<a href="q/b33.html" class="ticket-link"><span class="num">33.</span>Понятие и функции государственного управления в области и...</a>
+<a href="q/b34.html" class="ticket-link"><span class="num">34.</span>Полномочия Российской Федерации, субъектов Российской Фед...</a>
+<a href="q/b35.html" class="ticket-link"><span class="num">35.</span>Система органов государственной власти, осуществляющих уп...</a>
+<a href="q/b36.html" class="ticket-link"><span class="num">36.</span>Полномочия органов местного самоуправления в сфере управл...</a>
+<a href="q/b37.html" class="ticket-link"><span class="num">37.</span>Правовые основы землеустройства</a>
+<a href="q/b38.html" class="ticket-link"><span class="num">38.</span>Понятие, цели, задачи земельного мониторинга</a>
+<a href="q/b39.html" class="ticket-link"><span class="num">39.</span>Понятие, значение и порядок государственного кадастрового...</a>
+<a href="q/b40.html" class="ticket-link"><span class="num">40.</span>Государственная регистрация прав на земельные участки и с...</a>
+<a href="q/b41.html" class="ticket-link"><span class="num">41.</span>Изъятие земельных участков для государственных и муниципа...</a>
+<a href="q/b42.html" class="ticket-link"><span class="num">42.</span>Государственный надзор и контроль в области использовании...</a>
+<a href="q/b43.html" class="ticket-link"><span class="num">43.</span>Муниципальный земельный контроль</a>
+<a href="q/b44.html" class="ticket-link"><span class="num">44.</span>Правовые основы платы за землю в Российской Федерации</a>
+<a href="q/b45.html" class="ticket-link"><span class="num">45.</span>Оценка земли. Виды, назначение</a>
+<a href="q/b46.html" class="ticket-link"><span class="num">46.</span>Правовые основы охраны земель в Российской Федерации</a>
+<a href="q/b47.html" class="ticket-link"><span class="num">47.</span>Мелиорация, рекультивация и консервация земель</a>
+<a href="q/b48.html" class="ticket-link"><span class="num">48.</span>Понятие и цели юридической ответственности за совершение ...</a>
+<a href="q/b49.html" class="ticket-link"><span class="num">49.</span>Понятие и состав земельного правонарушения</a>
+<a href="q/b50.html" class="ticket-link"><span class="num">50.</span>Дисциплинарная и имущественная ответственность за земельн...</a>
+<a href="q/b51.html" class="ticket-link"><span class="num">51.</span>Административная и уголовная ответственность за земельные...</a>
+<a href="q/b52.html" class="ticket-link"><span class="num">52.</span>Принудительное прекращение прав на земельный участок как ...</a>
+<a href="q/b53.html" class="ticket-link"><span class="num">53.</span>Понятие и правовой режим земель сельскохозяйственного наз...</a>
+<a href="q/b54.html" class="ticket-link"><span class="num">54.</span>Особенности оборота земель сельскохозяйственного назначения</a>
+<a href="q/b55.html" class="ticket-link"><span class="num">55.</span>Правовой режим земель населенных пунктов</a>
+<a href="q/b56.html" class="ticket-link"><span class="num">56.</span>Правовой режим земель промышленности, энергетики, транспо...</a>
+<a href="q/b57.html" class="ticket-link"><span class="num">57.</span>Правовой режим земель особо охраняемых природных территор...</a>
+<a href="q/b58.html" class="ticket-link"><span class="num">58.</span>Правовой режим земель лесного фонда</a>
+<a href="q/b59.html" class="ticket-link"><span class="num">59.</span>Правовой режим земель водного фонда</a>
+<a href="q/b60.html" class="ticket-link"><span class="num">60.</span>Правовой режим земель запаса</a>
+<a href="q/b61.html" class="ticket-link"><span class="num">61.</span>Понятие и виды зон с особыми условиями использования терр...</a>
+<a href="q/b62.html" class="ticket-link"><span class="num">62.</span>Правовые последствия ограничения прав при установлении зо...</a>
+<div class="section-label">По алфавиту</div>
+<div id="letter-А" class="letter-anchor">А</div><a href="q/b51.html" class="ticket-link"><span class="num">51.</span>Административная и уголовная ответственность за земельные...</a>
+<div id="letter-Б" class="letter-anchor">Б</div><a href="q/b23.html" class="ticket-link"><span class="num">23.</span>Безвозмездное пользование земельным участком</a>
+<div id="letter-Г" class="letter-anchor">Г</div><a href="q/b40.html" class="ticket-link"><span class="num">40.</span>Государственная регистрация прав на земельные участки и с...</a>
+<a href="q/b42.html" class="ticket-link"><span class="num">42.</span>Государственный надзор и контроль в области использовании...</a>
+<div id="letter-Д" class="letter-anchor">Д</div><a href="q/b50.html" class="ticket-link"><span class="num">50.</span>Дисциплинарная и имущественная ответственность за земельн...</a>
+<div id="letter-З" class="letter-anchor">З</div><a href="q/b02.html" class="ticket-link"><span class="num">2.</span>Земельная реформа конца ХХ века в России. Цели, задачи, и...</a>
+<a href="q/b09.html" class="ticket-link"><span class="num">9.</span>Законодательство субъектов Российской Федерации как источ...</a>
+<a href="q/b30.html" class="ticket-link"><span class="num">30.</span>Защита прав на землю и земельные споры</a>
+<div id="letter-И" class="letter-anchor">И</div><a href="q/b01.html" class="ticket-link"><span class="num">1.</span>История становления земельного права России</a>
+<a href="q/b41.html" class="ticket-link"><span class="num">41.</span>Изъятие земельных участков для государственных и муниципа...</a>
+<div id="letter-К" class="letter-anchor">К</div><a href="q/b07.html" class="ticket-link"><span class="num">7.</span>Конституционные основы земельного права</a>
+<div id="letter-М" class="letter-anchor">М</div><a href="q/b43.html" class="ticket-link"><span class="num">43.</span>Муниципальный земельный контроль</a>
+<a href="q/b47.html" class="ticket-link"><span class="num">47.</span>Мелиорация, рекультивация и консервация земель</a>
+<div id="letter-О" class="letter-anchor">О</div><a href="q/b13.html" class="ticket-link"><span class="num">13.</span>Объекты земельных отношений. Состав земель Российской Фед...</a>
+<a href="q/b19.html" class="ticket-link"><span class="num">19.</span>Основания приобретения и прекращения прав на земельные уч...</a>
+<a href="q/b20.html" class="ticket-link"><span class="num">20.</span>Общая характеристика ограниченных прав на землю</a>
+<a href="q/b26.html" class="ticket-link"><span class="num">26.</span>Особенности совершения сделок с землей: купли-продажи, да...</a>
+<a href="q/b27.html" class="ticket-link"><span class="num">27.</span>Основания и порядок предоставления земельных участков, на...</a>
+<a href="q/b31.html" class="ticket-link"><span class="num">31.</span>Особенности судебной защиты прав на землю</a>
+<a href="q/b45.html" class="ticket-link"><span class="num">45.</span>Оценка земли. Виды, назначение</a>
+<a href="q/b54.html" class="ticket-link"><span class="num">54.</span>Особенности оборота земель сельскохозяйственного назначения</a>
+<div id="letter-П" class="letter-anchor">П</div><a href="q/b03.html" class="ticket-link"><span class="num">3.</span>Понятие, предмет и метод земельного права</a>
+<a href="q/b06.html" class="ticket-link"><span class="num">6.</span>Понятие и общая характеристика источников земельного прав...</a>
+<a href="q/b10.html" class="ticket-link"><span class="num">10.</span>Принципы земельного законодательства</a>
+<a href="q/b12.html" class="ticket-link"><span class="num">12.</span>Права и обязанности участников земельных отношений в обла...</a>
+<a href="q/b14.html" class="ticket-link"><span class="num">14.</span>Перевод земель и земельных участков из одной категории в ...</a>
+<a href="q/b15.html" class="ticket-link"><span class="num">15.</span>Понятие, содержание и виды земельных правоотношений</a>
+<a href="q/b16.html" class="ticket-link"><span class="num">16.</span>Понятие и формы собственности на землю в Российской Федер...</a>
+<a href="q/b17.html" class="ticket-link"><span class="num">17.</span>Право государственной и муниципальной собственности на зе...</a>
+<a href="q/b18.html" class="ticket-link"><span class="num">18.</span>Понятие и содержание права частной собственности на землю</a>
+<a href="q/b21.html" class="ticket-link"><span class="num">21.</span>Право постоянного (бессрочного) пользования, право пожизн...</a>
+<a href="q/b22.html" class="ticket-link"><span class="num">22.</span>Понятие и виды договора аренды земельных участков</a>
+<a href="q/b24.html" class="ticket-link"><span class="num">24.</span>Понятие и виды земельных сервитутов</a>
+<a href="q/b28.html" class="ticket-link"><span class="num">28.</span>Порядок проведения земельного аукциона</a>
+<a href="q/b29.html" class="ticket-link"><span class="num">29.</span>Порядок предоставления земельных участков, находящихся в ...</a>
+<a href="q/b33.html" class="ticket-link"><span class="num">33.</span>Понятие и функции государственного управления в области и...</a>
+<a href="q/b34.html" class="ticket-link"><span class="num">34.</span>Полномочия Российской Федерации, субъектов Российской Фед...</a>
+<a href="q/b36.html" class="ticket-link"><span class="num">36.</span>Полномочия органов местного самоуправления в сфере управл...</a>
+<a href="q/b37.html" class="ticket-link"><span class="num">37.</span>Правовые основы землеустройства</a>
+<a href="q/b38.html" class="ticket-link"><span class="num">38.</span>Понятие, цели, задачи земельного мониторинга</a>
+<a href="q/b39.html" class="ticket-link"><span class="num">39.</span>Понятие, значение и порядок государственного кадастрового...</a>
+<a href="q/b44.html" class="ticket-link"><span class="num">44.</span>Правовые основы платы за землю в Российской Федерации</a>
+<a href="q/b46.html" class="ticket-link"><span class="num">46.</span>Правовые основы охраны земель в Российской Федерации</a>
+<a href="q/b48.html" class="ticket-link"><span class="num">48.</span>Понятие и цели юридической ответственности за совершение ...</a>
+<a href="q/b49.html" class="ticket-link"><span class="num">49.</span>Понятие и состав земельного правонарушения</a>
+<a href="q/b52.html" class="ticket-link"><span class="num">52.</span>Принудительное прекращение прав на земельный участок как ...</a>
+<a href="q/b53.html" class="ticket-link"><span class="num">53.</span>Понятие и правовой режим земель сельскохозяйственного наз...</a>
+<a href="q/b55.html" class="ticket-link"><span class="num">55.</span>Правовой режим земель населенных пунктов</a>
+<a href="q/b56.html" class="ticket-link"><span class="num">56.</span>Правовой режим земель промышленности, энергетики, транспо...</a>
+<a href="q/b57.html" class="ticket-link"><span class="num">57.</span>Правовой режим земель особо охраняемых природных территор...</a>
+<a href="q/b58.html" class="ticket-link"><span class="num">58.</span>Правовой режим земель лесного фонда</a>
+<a href="q/b59.html" class="ticket-link"><span class="num">59.</span>Правовой режим земель водного фонда</a>
+<a href="q/b60.html" class="ticket-link"><span class="num">60.</span>Правовой режим земель запаса</a>
+<a href="q/b61.html" class="ticket-link"><span class="num">61.</span>Понятие и виды зон с особыми условиями использования терр...</a>
+<a href="q/b62.html" class="ticket-link"><span class="num">62.</span>Правовые последствия ограничения прав при установлении зо...</a>
+<div id="letter-Р" class="letter-anchor">Р</div><a href="q/b32.html" class="ticket-link"><span class="num">32.</span>Роль прокуратуры в защите прав на землю</a>
+<div id="letter-С" class="letter-anchor">С</div><a href="q/b04.html" class="ticket-link"><span class="num">4.</span>Система земельного права. Земельное право как наука и как...</a>
+<a href="q/b05.html" class="ticket-link"><span class="num">5.</span>Соотношение земельного права с другими отраслями права</a>
+<a href="q/b25.html" class="ticket-link"><span class="num">25.</span>Сделки с земельными участками. Общие правила об оборотосп...</a>
+<a href="q/b35.html" class="ticket-link"><span class="num">35.</span>Система органов государственной власти, осуществляющих уп...</a>
+<div id="letter-У" class="letter-anchor">У</div><a href="q/b11.html" class="ticket-link"><span class="num">11.</span>Участники земельных отношений. Их правовой статус</a>
+<div id="letter-Ф" class="letter-anchor">Ф</div><a href="q/b08.html" class="ticket-link"><span class="num">8.</span>Федеральные законы как источники земельного права</a>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 35</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
+    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
+    position:sticky; top:0; background:#000000; z-index:10;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:46px; height:46px; color:#80cbc4; text-decoration:none;
+    font-size:18px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#80cbc4; color:#000; }
+.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+
+/* Разделитель секций «По номерам» / «По алфавиту» */
+.section-label {
+    color:#80cbc4; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #80cbc4;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+    scroll-margin-top:120px;
+}
+
+/* Ссылка-билет — крупная кликабельная область */
+.ticket-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.ticket-link:active { background:#1a3a36; }
+.ticket-link .num { color:#80cbc4; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#80cbc4; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+
+.main-title { text-align:center; font-size:24px; color:#80cbc4; padding:12px 0 8px 0; }
+.ticket-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<h1>Билет 35. Система органов государственной власти, осуществляющих управление в области использования и охраны земель в Российской Федерации</h1>
+<p><em>Государственные органы <b>общей</b> компетенции</em></p>
+<p>Осуществляют земельное управление наряду с решением иных задач, отнесенных к их компетенции:</p>
+<p><b><em>1.Президент РФ</b></em></p>
+<ul>
+<li>формирует единую государственную земельную политику;</li>
+</ul>
+<ul>
+<li>является гарантом прав человека;</li>
+</ul>
+<ul>
+<li>издает указы.</li>
+</ul>
+<p><b><em>2. Правительство РФ</b></em></p>
+<ul>
+<li>реализует единую государственную земельную политику;</li>
+</ul>
+<ul>
+<li>издает постановления</li>
+</ul>
+<p><b><em>3. Федеральное собрание </b></em></p>
+<ul>
+<li>принимает ФЗ</li>
+</ul>
+<ul>
+<li>парламентский контроль</li>
+</ul>
+<p><b><em>4. Законодательные органы исполнительной гос.власти субъектов Российской Федерации</b></em></p>
+<ul>
+<li>осуществляют земельное управление на своей территории</li>
+</ul>
+<p><em>Государственные органы <b>специальной</b> компетенции</em></p>
+<p>Федеральные органы исполнительной власти, <em>специально созданные</em> для осуществления земельного управления.</p>
+<p><b><em>1. Федеральные Министерства</b></em></p>
+<ul>
+<li>осуществляют функции по выработке гос.политики нормативно-правовому регулированию земельных отношений</li>
+</ul>
+<p><b><em>2. Федеральные агентства</b></em></p>
+<ul>
+<li>оказывают государственные услуги</li>
+</ul>
+<ul>
+<li>управляет гос.имуществом</li>
+</ul>
+<p><b><em>3. Федеральные службы</b></em></p>
+<ul>
+<li>осуществляют государственный земельный контроль и надзор (например, Федеральное агентство лесного хозяйства (Рослесхоз).</li>
+</ul>
+<p><em>Система органов специальной компетенции в сфере земельного управления.</em></p>
+<p>Указ Президента РФ от 09.03.2004 N 314 \"О системе и структуре федеральных органов исполнительной власти\", Указ Президента РФ от 12.05.2008 N 724 \"Вопросы системы и структуры федеральных органов исполнительной власти\".</p>
+<p class="list-item"><b>1.</b> <b>Федеральная служба государственной регистрации, кадастра и картографии (Росреестр)</b>. Постановление Правительства РФ от 01.06.2009 N 45 \"О Федеральной службе государственной регистрации, кадастра и картографии\" (вместе с \"Положением о Федеральной службе государственной регистрации, кадастра и картографии\"). Росреестр наделен полномочиями Министерства и подведомственные Правительству РФ!!!</p>
+<p>\- функции по выработке гос. политики и нормативно-правовому регулированию с сфере использования земель как недвижимости;</p>
+<p>\- гос. кадастровый учет и гос. регистрации прав на земельные участки;</p>
+<p>\- ведение ЕГРН;</p>
+<p>\- гос. экспертиза землеустроительной документации;</p>
+<p>\- государственный земельный надзор контроль и другие полномочия.</p>
+<p><b>2. Министерство сельского хозяйства РФ (Минсельхоз)</b>. Постановление Правительства РФ от 12.06.2008 N 450 \"О Министерстве сельского хозяйства Российской Федерации\". Подведомственная Правительству РФ.</p>
+<p>\- функции выработке государственной политики и нормативно-правовому регулированию в сфере в сфере земельных отношений (в части, касающейся земель сельскохозяйственного назначения).</p>
+<p><b>3</b>.<b>Федеральное агентство по управлению государственным имуществом (Росимущество).</b></p>
+<p>Постановление Правительства РФ от 05.06.2008 N 432 \"О Федеральном агентстве по управлению государственным имуществом\". Подведомственно Министерству Финансов РФ.</p>
+<p>\- осуществляет управление земельными участками, находящимися в федеральной собственности;</p>
+<p>\- заключает договоры купли-продажи, аренды, проводит земельные аукционы и т.п.</p>
+<p><b>4. Федеральная служба по надзору в сфере природопользования (Росприроднадзор</b>). Постановление Правительства РФ от 30.07.2004 N 400 \"Об утверждении Положения о Федеральной службе по надзору в сфере природопользования и внесении изменений в Постановление Правительства Российской Федерации от 22 июля 2004 г. N 370\". Подведомственна Министерству природных ресурсов и экологии РФ.</p>
+<p>\- государственный земельный надзор и контроль.</p>
+<p><b>5</b>. <b>Федеральная служба по ветеринарному и фитосанитарному надзору (Россельхознадзор</b>). Постановление Правительства РФ от 30.06.2004 N 327 \"Об утверждении Положения о Федеральной службе по ветеринарному и фитосанитарному надзору\". Подведомственна Министерству сельского хозяйства РФ.</p>
+<p>\- государственный земельный надзор и контроль.</p>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>

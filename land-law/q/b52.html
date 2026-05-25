@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 52</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель — БОЛЬШИЕ кнопки для часов */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:5px;
+    padding:12px 0; margin-bottom:16px; border-bottom:1px solid #333333;
+    position:sticky; top:0; background:#000000; z-index:10;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:46px; height:46px; color:#80cbc4; text-decoration:none;
+    font-size:18px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#80cbc4; color:#000; }
+.alpha-bar a.no-items { opacity:0.25; pointer-events:none; }
+
+/* Разделитель секций «По номерам» / «По алфавиту» */
+.section-label {
+    color:#80cbc4; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #80cbc4;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Буквенный якорь — отступ сверху чтобы sticky-панель не перекрывала */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#80cbc4; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+    scroll-margin-top:120px;
+}
+
+/* Ссылка-билет — крупная кликабельная область */
+.ticket-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.ticket-link:active { background:#1a3a36; }
+.ticket-link .num { color:#80cbc4; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#80cbc4; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+
+.main-title { text-align:center; font-size:24px; color:#80cbc4; padding:12px 0 8px 0; }
+.ticket-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<h1>Билет 52. Принудительное прекращение прав на земельный участок как специальная земельно-правовая ответственность</h1>
+<div class="table-simple">
+<p class="table-header"><b>Основания принудительного прекращения права собственности на земельный участок за нарушение требований земельного законодательства</b></p>
+<p class="table-header"><b>Основания принудительного прекращения ограниченных прав на земельный участок за нарушение требований земельного законодательства (ст. 45 – 47 ЗК РФ)</b></p>
+<p class="table-cell">\- использование земельного участка не по целевому назначению, то есть неиспользование земельного участка, предназначенного для сельскохозяйственного производства либо жилищного или иного строительства, в указанных целях <em>в течение трех лет</em>, если более длительный срок не установлен федеральным законом (ст. 284 ГК РФ);</p>
+<p class="table-cell">\- использование земельного участка не по целевому назначению или если его использование приводит к существенному снижению плодородия земель сельскохозяйственного назначения или причинению вреда окружающей среде;</p>
+<p class="table-cell">\- использование земельного участка, если оно приводит к существенному снижению плодородия земель сельскохозяйственного назначения либо причинению вреда окружающей среде (ст. 285 ГК РФ);</p>
+<p class="table-cell">\- порча земель;</p>
+<p class="table-cell">\- на участке возведена или создана самовольная постройка, и лицами, указанными в пункте 2 ст. 222 ГК РФ, не выполнены предусмотренные законом обязанности по ее сносу или приведению в соответствие с установленными требованиями.</p>
+<p class="table-cell">\- невыполнение обязанностей по рекультивации земель, обязательных мероприятий по улучшению земель и охране почв;</p>
+<p class="table-cell">\- невыполнение обязанностей по приведению земель в состояние, пригодное для использования по целевому назначению;</p>
+<p class="table-cell">\- неиспользование земельного участка, предназначенного для сельскохозяйственного производства либо жилищного или иного строительства, в указанных целях <em>в течение трех лет</em>, если более длительный срок не установлен федеральным законом;</p>
+<p class="table-cell">\- возведение самовольной постройки.</p>
+</div>
+<p><em>Порядок прекращения прав на земельные участки за нарушение требований земельного законодательства</em></p>
+<div class="table-simple">
+<p class="table-header"><b>Порядок прекращения права собственности на земельный участок</b></p>
+<p class="table-header"><b>Порядок прекращения ограниченных прав на земельный участок</b></p>
+<p class="table-cell"><b>(ст. 286 ГК РФ, ст. 54.1 ЗК РФ)</b></p>
+<p class="table-cell"><b>(ст. 54 ЗК РФ)</b></p>
+<p class="table-cell">\- Госземнадзор выявляет факт правонарушения и привлекает виновного в административной ответственности по соответствующей статье КоАП РФ;</p>
+<p class="table-cell">\- Госземнадзор выявляет факт правонарушения и привлекает виновного в административной ответственности по соответствующей статье КоАП РФ, выносит предписание об устранении правонарушения;</p>
+<p class="table-cell">\- собственник письменно уведомляет уполномоченный орган о своем согласии на изъятие земельного участка, либо орган публичной власти обращается в суд с заявлением об изьятии земельного участка;</p>
+<p class="table-cell">\- Госземнадзор проводит повторную проверку исполнения предписания и выявляет факт его неисполнения;</p>
+<p class="table-cell">\- изъятый земельный участок продается с публичных торгов, собственнику выплачивается его рыночная стоимость за вычетом расходов по изъятию земельного участка.</p>
+<p class="table-cell">\- Госземнадзор обращается в суд с заявлением о прекращении права на земельный участок.</p>
+</div>
+<p><em>Особенности изъятия земель сельскохозяйственного назначения за нарушение требований законодательства</em></p>
+<p>Основания изъятия:</p>
+<p>\- <b>Неиспользование земельного участка в течение трех лет</b> (Постановление Правительства РФ от 18.09.2020 N 1482 \"О признаках неиспользования земельных участков из земель сельскохозяйственного назначения по целевому назначению или использования с нарушением законодательства Российской Федерации\");</p>
+<p>\- <b>Использование с нарушением законодательства Российской Федерации</b>, повлекшим за собой существенное снижение плодородия земель сельскохозяйственного назначения или причинение вреда окружающей среде (Постановление Правительства РФ от 22.07.2011 N 612 \"Об утверждении критериев существенного снижения плодородия земель сельскохозяйственного назначения\").</p>
+<p>Повторная проверка органа госземнадзора, установившая факт неисполнения предписания об устранении нарушений земельного законодательства, является основанием для заявления о невозможности государственной регистрации перехода, прекращения права на такой земельный участок. <em>То есть устанавливается запрет на его отчуждение вплоть до изъятия земельного участка.</em></p>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>
