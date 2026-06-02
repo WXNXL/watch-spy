@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Задачи по земельному праву</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:3px;
+    padding:8px 0; margin-bottom:12px; border-bottom:1px solid #333333;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:34px; height:34px; color:#ef9a9a; text-decoration:none;
+    font-size:14px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#ef9a9a; color:#000; }
+.alpha-bar a.no-items { opacity:0.2; pointer-events:none; }
+
+/* Разделитель секций */
+.section-label {
+    color:#ef9a9a; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #ef9a9a;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Заголовок темы в списке */
+.topic-label {
+    color:#80cbc4; font-size:20px; font-weight:bold;
+    text-align:center; padding:14px 0 8px 0;
+    border-top:1px solid #80cbc4;
+    margin-top:16px; margin-bottom:8px;
+}
+
+/* Буквенный якорь */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#ef9a9a; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+}
+
+/* Ссылка-задача */
+.task-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.task-link:active { background:#3a1a1a; }
+.task-link .num { color:#ef9a9a; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:24px; color:#ef9a9a; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #ef9a9a; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#ef9a9a; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+/* Блок «Ответ» — выделен визуально */
+.answer-label {
+    color:#a5d6a7; font-size:22px; font-weight:bold;
+    text-align:center; padding:12px 0 6px 0;
+    border-top:2px solid #a5d6a7;
+    margin-top:18px; margin-bottom:8px;
+}
+.answer-text {
+    border-left:4px solid #a5d6a7;
+    padding-left:14px; margin-bottom:14px;
+}
+
+/* Тег темы на странице задачи */
+.topic-tag {
+    display:inline-block; background:#1a1a1a; color:#80cbc4;
+    font-size:16px; padding:4px 12px; border-radius:20px;
+    margin:8px auto; text-align:center; border:1px solid #80cbc4;
+}
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#ef9a9a; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#3a1a1a; }
+
+.main-title { text-align:center; font-size:24px; color:#ef9a9a; padding:12px 0 8px 0; }
+.task-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<div class="main-title">Задачи по земельному праву</div>
+<div class="task-count">Всего задач: 29</div>
+<nav class="alpha-bar"><a class="no-items">А</a><a class="no-items">Б</a><a href="#letter-В">В</a><a href="#letter-Г">Г</a><a class="no-items">Д</a><a class="no-items">Е</a><a class="no-items">Ж</a><a href="#letter-З">З</a><a href="#letter-И">И</a><a class="no-items">К</a><a class="no-items">Л</a><a class="no-items">М</a><a href="#letter-Н">Н</a><a href="#letter-О">О</a><a href="#letter-П">П</a><a class="no-items">Р</a><a href="#letter-С">С</a><a class="no-items">Т</a><a href="#letter-У">У</a><a href="#letter-Ф">Ф</a><a class="no-items">Х</a><a class="no-items">Ц</a><a class="no-items">Ч</a><a class="no-items">Ш</a><a class="no-items">Щ</a><a class="no-items">Э</a><a href="#letter-Ю">Ю</a><a class="no-items">Я</a></nav><div class="section-label">По номерам</div>
+<a href="q/z01.html" class="task-link"><span class="num">1.</span>Орган законодательной власти субъекта Российской Фед...</a>
+<a href="q/z02.html" class="task-link"><span class="num">2.</span>Федеральный закон Российской Федерации, регулирующий...</a>
+<a href="q/z03.html" class="task-link"><span class="num">3.</span>Законодательный орган субъекта Российской Федерации ...</a>
+<a href="q/z04.html" class="task-link"><span class="num">4.</span>Орган местного самоуправления по заявлению заинтерес...</a>
+<a href="q/z05.html" class="task-link"><span class="num">5.</span>Орган исполнительной власти субъекта Российской Феде...</a>
+<a href="q/z06.html" class="task-link"><span class="num">6.</span>Иностранный гражданин приобрел в собственность земел...</a>
+<a href="q/z07.html" class="task-link"><span class="num">7.</span>На земельном участке расположена муниципальная полик...</a>
+<a href="q/z08.html" class="task-link"><span class="num">8.</span>Гражданин является арендатором земельного участка, н...</a>
+<a href="q/z09.html" class="task-link"><span class="num">9.</span>В 2015 г. в исполнительный орган государственной вла...</a>
+<a href="q/z10.html" class="task-link"><span class="num">10.</span>Глава администрации муниципального образования приня...</a>
+<a href="q/z11.html" class="task-link"><span class="num">11.</span>Орган местного самоуправления принял решение о предо...</a>
+<a href="q/z12.html" class="task-link"><span class="num">12.</span>Граждане заключили договор аренды земельного участка...</a>
+<a href="q/z13.html" class="task-link"><span class="num">13.</span>В договор купли-продажи земельного участка, находяще...</a>
+<a href="q/z14.html" class="task-link"><span class="num">14.</span>Гражданин подарил земельный участок своему сыну. В Р...</a>
+<a href="q/z15.html" class="task-link"><span class="num">15.</span>У гражданина находился в собственности земельный уча...</a>
+<a href="q/z16.html" class="task-link"><span class="num">16.</span>Строительная фирма заинтересована в строительстве мн...</a>
+<a href="q/z17.html" class="task-link"><span class="num">17.</span>Сособственникам многоквартирного дома принадлежит на...</a>
+<a href="q/z18.html" class="task-link"><span class="num">18.</span>Гражданин передал принадлежащий ему на праве собстве...</a>
+<a href="q/z19.html" class="task-link"><span class="num">19.</span>Юридическомулицу принадлежит на праве собственности ...</a>
+<a href="q/z20.html" class="task-link"><span class="num">20.</span>В результате организации аукциона по продаже права а...</a>
+<a href="q/z21.html" class="task-link"><span class="num">21.</span>После проведения аукциона по продаже земельного учас...</a>
+<a href="q/z22.html" class="task-link"><span class="num">22.</span>Гражданину на праве собственности принадлежит жилой ...</a>
+<a href="q/z23.html" class="task-link"><span class="num">23.</span>В результате проведения аукциона по продаже земельно...</a>
+<a href="q/z24.html" class="task-link"><span class="num">24.</span>После проведения аукциона по продаже земельного учас...</a>
+<a href="q/z25.html" class="task-link"><span class="num">25.</span>Государственный инспектор Федеральной службы государ...</a>
+<a href="q/z26.html" class="task-link"><span class="num">26.</span>В ходе подготовки Национального доклада об использов...</a>
+<a href="q/z27.html" class="task-link"><span class="num">27.</span>Федеральное агентство по управлению государственным ...</a>
+<a href="q/z28.html" class="task-link"><span class="num">28.</span>В государственный орган, осуществляющий кадастровый ...</a>
+<a href="q/z30.html" class="task-link"><span class="num">30.</span>Граждане заключили сделку купли-продажи земельного у...</a>
+<div class="section-label">По темам</div>
+<div id="topic-2" class="topic-label">Тема 2</div><a href="q/z01.html" class="task-link"><span class="num">1.</span>Орган законодательной власти субъекта Российской Фед...</a>
+<a href="q/z02.html" class="task-link"><span class="num">2.</span>Федеральный закон Российской Федерации, регулирующий...</a>
+<a href="q/z03.html" class="task-link"><span class="num">3.</span>Законодательный орган субъекта Российской Федерации ...</a>
+<div id="topic-3" class="topic-label">Тема 3</div><a href="q/z04.html" class="task-link"><span class="num">4.</span>Орган местного самоуправления по заявлению заинтерес...</a>
+<a href="q/z05.html" class="task-link"><span class="num">5.</span>Орган исполнительной власти субъекта Российской Феде...</a>
+<div id="topic-4" class="topic-label">Тема 4</div><a href="q/z06.html" class="task-link"><span class="num">6.</span>Иностранный гражданин приобрел в собственность земел...</a>
+<a href="q/z07.html" class="task-link"><span class="num">7.</span>На земельном участке расположена муниципальная полик...</a>
+<div id="topic-5" class="topic-label">Тема 5</div><a href="q/z08.html" class="task-link"><span class="num">8.</span>Гражданин является арендатором земельного участка, н...</a>
+<a href="q/z09.html" class="task-link"><span class="num">9.</span>В 2015 г. в исполнительный орган государственной вла...</a>
+<a href="q/z10.html" class="task-link"><span class="num">10.</span>Глава администрации муниципального образования приня...</a>
+<a href="q/z11.html" class="task-link"><span class="num">11.</span>Орган местного самоуправления принял решение о предо...</a>
+<a href="q/z12.html" class="task-link"><span class="num">12.</span>Граждане заключили договор аренды земельного участка...</a>
+<div id="topic-6" class="topic-label">Тема 6</div><a href="q/z13.html" class="task-link"><span class="num">13.</span>В договор купли-продажи земельного участка, находяще...</a>
+<a href="q/z14.html" class="task-link"><span class="num">14.</span>Гражданин подарил земельный участок своему сыну. В Р...</a>
+<a href="q/z15.html" class="task-link"><span class="num">15.</span>У гражданина находился в собственности земельный уча...</a>
+<a href="q/z16.html" class="task-link"><span class="num">16.</span>Строительная фирма заинтересована в строительстве мн...</a>
+<a href="q/z17.html" class="task-link"><span class="num">17.</span>Сособственникам многоквартирного дома принадлежит на...</a>
+<a href="q/z18.html" class="task-link"><span class="num">18.</span>Гражданин передал принадлежащий ему на праве собстве...</a>
+<a href="q/z19.html" class="task-link"><span class="num">19.</span>Юридическомулицу принадлежит на праве собственности ...</a>
+<div id="topic-7" class="topic-label">Тема 7</div><a href="q/z20.html" class="task-link"><span class="num">20.</span>В результате организации аукциона по продаже права а...</a>
+<a href="q/z21.html" class="task-link"><span class="num">21.</span>После проведения аукциона по продаже земельного учас...</a>
+<a href="q/z22.html" class="task-link"><span class="num">22.</span>Гражданину на праве собственности принадлежит жилой ...</a>
+<a href="q/z23.html" class="task-link"><span class="num">23.</span>В результате проведения аукциона по продаже земельно...</a>
+<a href="q/z24.html" class="task-link"><span class="num">24.</span>После проведения аукциона по продаже земельного учас...</a>
+<a href="q/z25.html" class="task-link"><span class="num">25.</span>Государственный инспектор Федеральной службы государ...</a>
+<a href="q/z26.html" class="task-link"><span class="num">26.</span>В ходе подготовки Национального доклада об использов...</a>
+<a href="q/z27.html" class="task-link"><span class="num">27.</span>Федеральное агентство по управлению государственным ...</a>
+<a href="q/z28.html" class="task-link"><span class="num">28.</span>В государственный орган, осуществляющий кадастровый ...</a>
+<a href="q/z30.html" class="task-link"><span class="num">30.</span>Граждане заключили сделку купли-продажи земельного у...</a>
+<div class="section-label">По алфавиту</div>
+<div id="letter-В" class="letter-anchor">В</div><a href="q/z09.html" class="task-link"><span class="num">9.</span>В 2015 г. в исполнительный орган государственной вла...</a>
+<a href="q/z13.html" class="task-link"><span class="num">13.</span>В договор купли-продажи земельного участка, находяще...</a>
+<a href="q/z20.html" class="task-link"><span class="num">20.</span>В результате организации аукциона по продаже права а...</a>
+<a href="q/z23.html" class="task-link"><span class="num">23.</span>В результате проведения аукциона по продаже земельно...</a>
+<a href="q/z26.html" class="task-link"><span class="num">26.</span>В ходе подготовки Национального доклада об использов...</a>
+<a href="q/z28.html" class="task-link"><span class="num">28.</span>В государственный орган, осуществляющий кадастровый ...</a>
+<div id="letter-Г" class="letter-anchor">Г</div><a href="q/z08.html" class="task-link"><span class="num">8.</span>Гражданин является арендатором земельного участка, н...</a>
+<a href="q/z10.html" class="task-link"><span class="num">10.</span>Глава администрации муниципального образования приня...</a>
+<a href="q/z12.html" class="task-link"><span class="num">12.</span>Граждане заключили договор аренды земельного участка...</a>
+<a href="q/z14.html" class="task-link"><span class="num">14.</span>Гражданин подарил земельный участок своему сыну. В Р...</a>
+<a href="q/z18.html" class="task-link"><span class="num">18.</span>Гражданин передал принадлежащий ему на праве собстве...</a>
+<a href="q/z22.html" class="task-link"><span class="num">22.</span>Гражданину на праве собственности принадлежит жилой ...</a>
+<a href="q/z25.html" class="task-link"><span class="num">25.</span>Государственный инспектор Федеральной службы государ...</a>
+<a href="q/z30.html" class="task-link"><span class="num">30.</span>Граждане заключили сделку купли-продажи земельного у...</a>
+<div id="letter-З" class="letter-anchor">З</div><a href="q/z03.html" class="task-link"><span class="num">3.</span>Законодательный орган субъекта Российской Федерации ...</a>
+<div id="letter-И" class="letter-anchor">И</div><a href="q/z06.html" class="task-link"><span class="num">6.</span>Иностранный гражданин приобрел в собственность земел...</a>
+<div id="letter-Н" class="letter-anchor">Н</div><a href="q/z07.html" class="task-link"><span class="num">7.</span>На земельном участке расположена муниципальная полик...</a>
+<div id="letter-О" class="letter-anchor">О</div><a href="q/z01.html" class="task-link"><span class="num">1.</span>Орган законодательной власти субъекта Российской Фед...</a>
+<a href="q/z04.html" class="task-link"><span class="num">4.</span>Орган местного самоуправления по заявлению заинтерес...</a>
+<a href="q/z05.html" class="task-link"><span class="num">5.</span>Орган исполнительной власти субъекта Российской Феде...</a>
+<a href="q/z11.html" class="task-link"><span class="num">11.</span>Орган местного самоуправления принял решение о предо...</a>
+<div id="letter-П" class="letter-anchor">П</div><a href="q/z21.html" class="task-link"><span class="num">21.</span>После проведения аукциона по продаже земельного учас...</a>
+<a href="q/z24.html" class="task-link"><span class="num">24.</span>После проведения аукциона по продаже земельного учас...</a>
+<div id="letter-С" class="letter-anchor">С</div><a href="q/z16.html" class="task-link"><span class="num">16.</span>Строительная фирма заинтересована в строительстве мн...</a>
+<a href="q/z17.html" class="task-link"><span class="num">17.</span>Сособственникам многоквартирного дома принадлежит на...</a>
+<div id="letter-У" class="letter-anchor">У</div><a href="q/z15.html" class="task-link"><span class="num">15.</span>У гражданина находился в собственности земельный уча...</a>
+<div id="letter-Ф" class="letter-anchor">Ф</div><a href="q/z02.html" class="task-link"><span class="num">2.</span>Федеральный закон Российской Федерации, регулирующий...</a>
+<a href="q/z27.html" class="task-link"><span class="num">27.</span>Федеральное агентство по управлению государственным ...</a>
+<div id="letter-Ю" class="letter-anchor">Ю</div><a href="q/z19.html" class="task-link"><span class="num">19.</span>Юридическомулицу принадлежит на праве собственности ...</a>
+
+</body>
+</html>

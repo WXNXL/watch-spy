@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Задача 26</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+/* Алфавитная панель */
+.alpha-bar {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:3px;
+    padding:8px 0; margin-bottom:12px; border-bottom:1px solid #333333;
+}
+.alpha-bar a {
+    display:flex; align-items:center; justify-content:center;
+    width:34px; height:34px; color:#ef9a9a; text-decoration:none;
+    font-size:14px; font-weight:bold; border-radius:50%;
+    background:#111; border:1px solid #333333;
+}
+.alpha-bar a:active { background:#ef9a9a; color:#000; }
+.alpha-bar a.no-items { opacity:0.2; pointer-events:none; }
+
+/* Разделитель секций */
+.section-label {
+    color:#ef9a9a; font-size:22px; font-weight:bold;
+    text-align:center; padding:16px 0 10px 0;
+    border-top:2px solid #ef9a9a;
+    margin-top:20px; margin-bottom:10px;
+}
+
+/* Заголовок темы в списке */
+.topic-label {
+    color:#80cbc4; font-size:20px; font-weight:bold;
+    text-align:center; padding:14px 0 8px 0;
+    border-top:1px solid #80cbc4;
+    margin-top:16px; margin-bottom:8px;
+}
+
+/* Буквенный якорь */
+.letter-anchor {
+    padding:10px 0 6px 0; color:#ef9a9a; font-size:24px;
+    font-weight:bold; text-align:center; border-bottom:1px solid #333333;
+    margin:14px 0 10px 0;
+}
+
+/* Ссылка-задача */
+.task-link {
+    display:block; padding:16px 14px; margin-bottom:8px;
+    color:#fff; text-decoration:none; font-size:19px;
+    line-height:1.6; border-bottom:1px solid #1a1a1a; border-radius:10px;
+    background:#0a0a0a; min-height:56px;
+}
+.task-link:active { background:#3a1a1a; }
+.task-link .num { color:#ef9a9a; font-weight:bold; margin-right:10px; }
+
+h1 { font-size:24px; color:#ef9a9a; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #ef9a9a; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.table-simple { margin:12px 0; padding:10px; border:1px solid #333333; border-radius:8px; background:#0a0a0a; }
+.table-header { color:#ef9a9a; font-weight:bold; font-size:17px; margin-bottom:8px; text-align:center; border-bottom:1px solid #333333; padding-bottom:6px; }
+.table-cell { color:#e0e0e0; font-size:16px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid #1a1a1a; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+code { color:#ce93d8; font-size:16px; }
+
+/* Блок «Ответ» — выделен визуально */
+.answer-label {
+    color:#a5d6a7; font-size:22px; font-weight:bold;
+    text-align:center; padding:12px 0 6px 0;
+    border-top:2px solid #a5d6a7;
+    margin-top:18px; margin-bottom:8px;
+}
+.answer-text {
+    border-left:4px solid #a5d6a7;
+    padding-left:14px; margin-bottom:14px;
+}
+
+/* Тег темы на странице задачи */
+.topic-tag {
+    display:inline-block; background:#1a1a1a; color:#80cbc4;
+    font-size:16px; padding:4px 12px; border-radius:20px;
+    margin:8px auto; text-align:center; border:1px solid #80cbc4;
+}
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#ef9a9a; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#3a1a1a; }
+
+.main-title { text-align:center; font-size:24px; color:#ef9a9a; padding:12px 0 8px 0; }
+.task-count { text-align:center; color:#666; font-size:17px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<h1>Задача 26. В ходе подготовки Национального доклада об использовании и охране земель за очередной год Федеральная служба государственной регистрации, кадастра и картографии (Росреестр) обратилась с запросом в Министерство сельского хозяйства о предоставлении сведений об использовании и охране земель сельскохозяйственного назначения. Министерство дало ответ, что полномочиями по ведению государственного мониторинга наделен Росреестр, и Министерство сельского хозяйства такой вид деятельности не осуществляет. Решите спор государственных органов.</h1>
+<div style="text-align:center"><span class="topic-tag">Тема 7</span></div>
+<p><b>27</b></p>
+<div class="answer-label">Ответ</div>
+<p class="answer-text">минсельхоз не прав, так как</p>
+<p>Разделение полномочий: В соответствии с земельным законодательством РФ, государственный мониторинг земель делится на два направления:</p>
+<ul>
+<li>Общий мониторинг земель (всех категорий, кроме с/х назначения) осуществляет Росреестр.</li>
+</ul>
+<ul>
+<li>Мониторинг земель сельскохозяйственного назначения осуществляет Минсельхоз России (и подведомственные ему учреждения).</li>
+</ul>
+<p>Правовая база: <b>Согласно п. 2 ст. 67 Земельного кодекса РФ,</b> мониторинг земель сельскохозяйственного назначения — это обязанность Минсельхоза, который осуществляет наблюдение за состоянием почв, их плодородием и использованием. <b>Порядок этого мониторинга утвержден Минсельхозом России (Приказ от 24.12.2015 № 664).</b></p>
+<p>Обязанность предоставления сведений: При подготовке Национального доклада <em>Росреестр действует как координатор, обобщающий сведения.</em> Минсельхоз России обязан предоставлять данные мониторинга по землям своей компетенции (с/х назначения) для включения в этот доклад.</p>
+<a href="../index.html" class="back-link">← К задачам</a>
+</body>
+</html>
