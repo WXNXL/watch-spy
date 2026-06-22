@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 42</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+</style>
+</head>
+<body>
+<h1>Билет 42. Автоматизированная упрощенная система налогообложения</h1>
+<p class="quote"><b>Правовая основа:</b> ФЗ № 17-ФЗ от 25.02.2022. Эксперимент — <b>до 31.12.2027</b>.</p>
+<p>С 2024 г. (ФЗ № 362-ФЗ) право вводить АУСН распространено на <b>все регионы РФ</b> (при принятии закона субъекта).</p>
+<h2>Суть режима — полная автоматизация</h2>
+<ul>
+  <li>Налог считает <b>сама ФНС</b> на основе данных ККТ, банков и личного кабинета</li>
+  <li><b>Декларация не сдается</b></li>
+  <li>Книга учёта доходов и расходов вручную не ведётся</li>
+</ul>
+<h2>Освобождение от других налогов и взносов</h2>
+<p class="list-item"><b>Организации:</b> налог на прибыль, налог на имущество (кроме кадастровой стоимости), НДС.</p>
+<p class="list-item"><b>ИП:</b> НДФЛ, налог на имущество физлиц (кроме коммерческой недвижимости), НДС.</p>
+<p class="list-item"><b>Страховые взносы:</b> 0% на ОПС, ОМС, ОСС (за себя и сотрудников). Платится только фиксированный «на травматизм» (~<b>3 тыс. руб./год</b> за всех).</p>
+<h2>Критерии — кто НЕ вправе применять</h2>
+<ol>
+  <li>Годовой доход &gt; <b>60 млн руб.</b></li>
+  <li>Средняя численность сотрудников &gt; <b>5 человек</b> (только резиденты РФ)</li>
+  <li>Остаточная стоимость основных средств &gt; <b>150 млн руб.</b></li>
+  <li>Наличие филиалов или обособленных подразделений</li>
+  <li>Выплата зарплаты <b>в наличной форме</b> (только безнал через банк-партнёр)</li>
+  <li>Банки, страховые, НПФ, инвестфонды, ломбарды, профучастники рынка ценных бумаг</li>
+  <li>Нотариусы, адвокаты, медиаторы, арбитражные управляющие, оценщики</li>
+  <li>Совмещение АУСН с иными режимами</li>
+</ol>
+<h2>Объекты и ставки</h2>
+<ul>
+  <li><b>Период:</b> календарный месяц</li>
+  <li>Выбор объекта — налогоплательщиком, менять можно раз в год (с 1 января)</li>
+</ul>
+<p class="list-item"><b>«Доходы»:</b> <b>8%</b>. База — денежное выражение всех поступивших доходов.</p>
+<p class="list-item"><b>«Доходы минус расходы»:</b> <b>20%</b>. База — доходы минус подтверждённые расходы. <b>Минимальный налог — 3% от доходов.</b></p>
+<h2>Механизм исчисления и уплаты</h2>
+<ol>
+  <li><b>Учёт доходов/расходов:</b> банки-партнёры и ККТ автоматически передают данные в ФНС. Иные доходы — налогоплательщик вносит в ЛК до <b>5-го числа</b> следующего месяца</li>
+  <li><b>Расчёт налога:</b> ФНС сама, уведомляет через ЛК до <b>15-го числа</b></li>
+  <li><b>Срок уплаты:</b> не позднее <b>25-го числа</b> месяца, следующего за периодом</li>
+  <li><b>Переход:</b> с 1-го числа любого месяца, уведомив ФНС до конца предшествующего месяца</li>
+</ol>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>

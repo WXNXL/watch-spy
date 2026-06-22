@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Билет 9</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+
+body {
+    background:#000000;
+    color:#e0e0e0;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:20px;
+    line-height:1.7;
+    padding:24px max(22px, 14%);
+    -webkit-tap-highlight-color:transparent;
+    overflow-y:auto;
+}
+
+h1 { font-size:26px; color:#80cbc4; text-align:center; padding:14px 0; line-height:1.3; word-wrap:break-word; }
+h2,h3,h4,h5,h6 { color:#b0bec5; font-size:22px; text-align:center; margin:14px 0 10px 0; }
+
+p { margin-bottom:14px; text-align:left; word-wrap:break-word; }
+p.list-item { padding-left:16px; border-left:3px solid #80cbc4; margin-bottom:12px; }
+p.quote { padding-left:16px; border-left:3px solid #555; color:#999999; margin-bottom:12px; font-size:17px; }
+
+ul,ol { margin:8px 0 12px 16px; }
+li { margin-bottom:8px; word-wrap:break-word; }
+
+.def { color:#ffcc80; font-weight:bold; }
+b,strong { color:#fff; }
+em { color:#b0bec5; font-style:italic; }
+
+.back-link {
+    display:block; text-align:center; padding:18px; margin-top:24px;
+    color:#80cbc4; text-decoration:none; font-size:20px; font-weight:bold;
+    border:1px solid #333333; border-radius:12px; background:#0a0a0a;
+    min-height:56px;
+}
+.back-link:active { background:#1a3a36; }
+</style>
+</head>
+<body>
+<h1>Билет 9. Элементы налогообложения</h1>
+<p>Налог считается законно установленным <b>только если</b> определены налогоплательщики и <b>все обязательные элементы</b>.</p>
+<p><b>Всего 8 элементов</b> (7 обязательных + 1 факультативный):</p>
+<h2>1. Объект налогообложения</h2>
+<p>Реализация товаров/услуг, имущество, доход, прибыль — обстоятельство со стоимостью или физической характеристикой.</p>
+<p>Наличие → обязанность платить; утрата → прекращение. У каждого налога <b>свой самостоятельный</b> объект.</p>
+<h2>2. Налоговая база</h2>
+<p>Стоимостная/физическая/иная характеристика объекта (доход — рубли; транспорт — л.с.).</p>
+<p><b>Кто исчисляет:</b></p>
+<ul>
+  <li>Организации — по данным бухучёта</li>
+  <li>Физлица — самостоятельно или по данным ФНС</li>
+</ul>
+<p class="quote"><b>Ст. 54.1 НК РФ:</b> запрещено искусственно занижать базу. Уменьшить можно только если сделка <b>реальна</b> и её главная цель — не уклонение от налогов.</p>
+<h2>3. Налоговая ставка</h2>
+<p>Величина начислений на единицу базы (в % или твёрдой сумме).</p>
+<ul>
+  <li><b>Пропорциональная</b> — не меняется</li>
+  <li><b>Прогрессивная</b> — растёт с ростом базы (соц. функция)</li>
+</ul>
+<h2>4. Налоговый период</h2>
+<p>Время (напр. календарный год), по окончании которого определяется база и исчисляется налог.</p>
+<p class="quote"><b>Не срок уплаты!</b> Задаёт регулярность расчётов. Внутри — <b>отчётные периоды</b>.</p>
+<h2>5. Срок уплаты</h2>
+<p>Период, в течение которого нужно перечислить налог в бюджет.</p>
+<ul>
+  <li>Течёт <b>после окончания налогового периода</b> (или после уведомления ФНС)</li>
+  <li>За просрочку — <b>пени</b></li>
+</ul>
+<h2>6. Порядок исчисления</h2>
+<p>База × ставка с учётом льгот. Сумма <b>округляется до полных рублей</b> (до 50 коп. — долой, 50+ — вверх).</p>
+<p><b>Кто исчисляет:</b></p>
+<ul>
+  <li><b>Сам налогоплательщик</b> (в большинстве случаев)</li>
+  <li><b>Налоговый орган</b> — транспортный/имущественный налог для физлиц. Уведомление за <b>30 дней</b> до срока. Если сумма &lt;100 руб. — не шлют</li>
+  <li><b>Налоговый агент</b> — работодатель по НДФЛ</li>
+</ul>
+<h2>7. Порядок уплаты</h2>
+<p>Способ внесения денег (разово или <b>авансовыми платежами</b>).</p>
+<ul>
+  <li>Просрочка <b>аванса</b> → только пени</li>
+  <li>Просрочка <b>самого налога</b> → пени + штраф</li>
+</ul>
+<p><b>Форма уплаты:</b></p>
+<ul>
+  <li>Организации — только <b>безнал</b></li>
+  <li>Физлица — наличными, но <b>не в ФНС</b> (через Почту России, кассу МФЦ/администрации)</li>
+</ul>
+<h2>8. Налоговая льгота (факультативный)</h2>
+<p>Преимущества для отдельных категорий лиц. Единственный <b>необязательный</b> элемент.</p>
+<a href="../index.html" class="back-link">← К билетам</a>
+</body>
+</html>
